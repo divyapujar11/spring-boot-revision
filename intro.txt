@@ -29,3 +29,21 @@ all the dependencies are defined inside
 	<dependencies>
 		<dependency>...</dependency>
 	</dependencies> 
+
+build spring boot application:
+1) goto start.spring.io 
+2) add artifact, java version and necessary dependencies -- web dependency for creating restful services
+3) download the package in zip file and extract in workspace
+4) after opening file in sts we can directly run the application as it contains default configurations
+
+@SpringBootApplication
+public class CourseApiAppApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CourseApiAppApplication.class, args);
+	}
+
+}
+
+@SpringBootApplication is annotation to represent the class as it is spring boot application which is start point of the application
+SpringApplication.run(className,args) -- run is static method
