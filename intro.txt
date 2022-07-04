@@ -23,4 +23,9 @@ What is spring boot?
 what is spring?
 * it is a application framework that provides template, framework for creating Enterprise applications
 
-In pom.xml file org.springframework.boot is a parent class for a current project
+In pom.xml file org.springframework.boot is a parent package for a current project
+	-> parent packages are defined in <parent></parent>
+all the dependencies are defined inside 
+	<dependencies>
+		<dependency>...</dependency>
+	</dependencies> 
