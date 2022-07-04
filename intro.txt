@@ -19,3 +19,5 @@ What is spring boot?
   5) no xml configuration and code generation
   many more..
   
+what is spring?
+* it is a application framework that provides template, framework for creating Enterprise applications
