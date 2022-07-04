@@ -19,7 +19,7 @@ What is spring boot?
   5) no xml configuration and code generation
   many more..
 
-------------------------------------------------------------JavaBrains SpringBoot Tutorial-----------------------------------------------------------------------------
+----------------------------------------------JavaBrains SpringBoot Tutorial-----------------------------------------------------------------------------
 what is spring?
 * it is a application framework that provides template, framework for creating Enterprise applications
 
@@ -47,3 +47,25 @@ public class CourseApiAppApplication {
 
 @SpringBootApplication is annotation to represent the class as it is spring boot application which is start point of the application
 SpringApplication.run(className,args) -- run is static method
+
+what happens when spring boot application is started?
+* it sets up default configuration 
+* starts spring application context
+* performs class path scan 
+* starts tomcat server(built-in)
+
+controller is created as it is a java class, contains annotations and has information about url's to trigger( mapping the requests) GET,PUT,POST,DELETE
+@RestController annotation is added to represent the class as controller
+
+@RequestMapping
+	-- it maps the HTTP requests 
+	--maps to the GET method as default
+
+@Autowired - creates bean in spring configuration(ioc)
+
+@PathVariable - maps the variable to the request mapping 
+
+@service - it is annotation which represents the class as service class which contains bussiness logic
+
+ 
+
