@@ -3,3 +3,19 @@ It is developed by Pivotal Team and is used to build stand-alone and production 
 
 While the Spring framework focuses on providing flexibility to you, Spring Boot aims to shorten the code length and provide you with the easiest way to develop a web application. 
 With annotation configuration and default codes, Spring Boot shortens the time involved in developing an application.
+
+
+What is spring boot?
+* Spring boot is a module of spring which makes easy to create stand-alone, product-grade spring based application that you can 'just-run'
+* spring framework + embedded servers - manual configuration = spring boot
+* features of Spring Boot:
+  1) conventional over configuration software design style
+      -> Decrease the effort of developer
+  2) Opiniated default 
+      -> automatic configuration
+      -> scan the class path and find the dependency it will automatically configure the things
+  3) it creates stand-alone spring application that can be started using java -jar
+  4) embed tomcat no need to deploy WAR files
+  5) no xml configuration and code generation
+  many more..
+  
