@@ -46,7 +46,7 @@ public class CourseApiAppApplication {
 }
 
 @SpringBootApplication is annotation to represent the class as it is spring boot application which is start point of the application
-SpringApplication.run(className,args) -- run is static method
+@SpringBootApplication - enables Spring Boot autoconfiguration and component scanning.
 
 what happens when spring boot application is started?
 * it sets up default configuration 
@@ -55,17 +55,40 @@ what happens when spring boot application is started?
 * starts tomcat server(built-in)
 
 controller is created as it is a java class, contains annotations and has information about url's to trigger( mapping the requests) GET,PUT,POST,DELETE
-@RestController annotation is added to represent the class as controller
+@RestController annotation is added to represent the class as controller used for RESTful webservices
 
 @RequestMapping
 	-- it maps the HTTP requests 
 	--maps to the GET method as default
 
-@Autowired - creates bean in spring configuration(ioc)
+@Autowired - marks a constructor, field, or setter method to be autowired by Spring dependency injection.
 
-@PathVariable - maps the variable to the request mapping 
+@PathVariable - maps the variable to the request mapping id.
 
 @service - it is annotation which represents the class as service class which contains bussiness logic
+
+@Bean - indicates that a method produces a bean to be managed by Spring.
+
+What is dependency Injection?
+The process of injecting dependent bean objects into target bean objects is called dependency injection.
+* Setter Injection: The IOC container will inject the dependent bean object into the target bean object by calling the setter method.
+* Constructor Injection: The IOC container will inject the dependent bean object into the target bean 
+object by calling the target bean constructor.
+* Field Injection: The IOC container will inject the dependent bean object into the target bean object by Reflection API.
+
+IoC Inversion of Control-  Container is a framework for implementing automatic dependency injection. It manages object creation and its life-time and also 
+injects dependencies into the class.
+
+what is Swagger?
+* develop APIs
+* interact with APIs
+* document APIs
+creates automatic document of application
+how to add swagger to spring boot?
+* add swagger dependency in pom.xml
+* add swagger enable annotation @EnableSwagger2
+* configure swagger
+* add details as annotations to apis
 
  
 
