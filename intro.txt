@@ -91,7 +91,18 @@ how to add swagger to spring boot?
 * add details as annotations to apis
 
 -----------------------------------------------------
+spring boot actuator
+* actuator has production- ready features to application, it monitors, gathers metrics and understand traffic of the application
+* actuator is mainly used to expose operational information about running application - health, metrics, information, etc
+* add actuator dependency in pom.xml
 
+-----------------------------------------------------
+@RestController - it is ready for use by spring mvc to handle web requests
+@GetMapping maps '/' to the home method of the application returns expected result
+@SpringBootApplication declare class as spring boot application and also adds following:
+	@configuration: tags the class as a source of bean definition for the application context
+	@EnableAutoConfiguration: tells spring boot to start adding beans based on classpath setting, other beans and various property settings.
+	@componentScan: tells spring to look for other components,configurations, and services in the application package
 
  
 
