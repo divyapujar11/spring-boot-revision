@@ -108,5 +108,14 @@ the main() method uses spring boot's SpringApplication.run() method to launch an
 
 spring boot actuator module provides management service for application suervices like health,audits,beans and more
 
+-----------------------------------------------------------
+what is REST?
+* REST stands for REpresentation State Transfer.
+* REST specifies a set of architectural constraints.
+* Any service which satisfies these contraints is called RESTful service.
+* the five important constraints for RESTful web service are:
+	* client-server : there should be a 
+
+
  
 
