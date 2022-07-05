@@ -104,5 +104,9 @@ spring boot actuator
 	@EnableAutoConfiguration: tells spring boot to start adding beans based on classpath setting, other beans and various property settings.
 	@componentScan: tells spring to look for other components,configurations, and services in the application package
 
+the main() method uses spring boot's SpringApplication.run() method to launch an application.
+
+spring boot actuator module provides management service for application suervices like health,audits,beans and more
+
  
 
